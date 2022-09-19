@@ -16,9 +16,10 @@ largest = 0
 for _ in range(n):
     t, w = map(int, input().split())
     list.append((t, w))
-
+print(list)
 # 키순으로 정렬
 list.sort(reverse=True)
+print(list)
 for t, w in list:
     if w > largest:
         largest = w
