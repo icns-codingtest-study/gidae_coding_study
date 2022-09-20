@@ -28,5 +28,16 @@ while lt <= rt:
         tmp.append((a[rt], 'R'))
 
     tmp.sort()
+    print(tmp)
     if len(tmp) == 0:
         break
+    else:
+        res = res+tmp[0][1]
+        last = tmp[0][0]
+        if tmp[0][1] == 'L':
+            lt += 1
+        else:
+            rt -= 1
+    tmp.clear()
+print(len(res))
+print(res)
